@@ -9,12 +9,17 @@ $(function () {
    		var trainFreq = currentData.frequency;
 
 		var firstTrain = moment(currentData.start, "HH:mm").subtract(1, "years");
+		console.log("firstTrain: " + firstTrain);
 
 		var diffTime = moment().diff(moment(firstTrain), "minutes");
+		console.log("Difftime: " + diffTime);
 
-		var remainer = diffTime % trainFreq;
+		var remainder = diffTime % trainFreq;
+		console.log(remainder);
 
-		var timeTillTrain = 
+		var timeTillTrain = trainFreq - remainder;
+
+		var nextTrain = moment().add(timeTillTrain, "minutes");
 
     	var newRow = $("<tr class='tableRow'>");
         //creates a newRow variable with a class tableRow
@@ -24,9 +29,9 @@ $(function () {
         //creates a new <td> for the destination inputed
         var currentFreq = $("<td class='frequency'>").text(currentData.frequency);
         //creates a new <td> for the frequency that was calculated
-        var currentArrival = $("<td class='nextArrival'>").text("calculated by function");
+        var currentArrival = $("<td class='nextArrival'>").text(moment(nextTrain).format("h:mm A"));
         //creates a new <td> for the next train arrival inputed
-        var currentTrain = $("<td class='minAway'>").text("calculated with function");
+        var currentTrain = $("<td class='minAway'>").text(timeTillTrain);
         //creates a new <td> for the next train that was calculated 
 
         newRow.append(currentName)
