@@ -6,6 +6,16 @@ $(function () {
 
     	let currentData = snapshot.val();
 
+   		var trainFreq = currentData.frequency;
+
+		var firstTrain = moment(currentData.start, "HH:mm").subtract(1, "years");
+
+		var diffTime = moment().diff(moment(firstTrain), "minutes");
+
+		var remainer = diffTime % trainFreq;
+
+		var timeTillTrain = 
+
     	var newRow = $("<tr class='tableRow'>");
         //creates a newRow variable with a class tableRow
         var currentName = $("<td class='name'>").text(currentData.name);
@@ -16,7 +26,7 @@ $(function () {
         //creates a new <td> for the frequency that was calculated
         var currentArrival = $("<td class='nextArrival'>").text("calculated by function");
         //creates a new <td> for the next train arrival inputed
-        var currentTrain = $("<td class='nextTrain'>").text("calculated with function");
+        var currentTrain = $("<td class='minAway'>").text("calculated with function");
         //creates a new <td> for the next train that was calculated 
 
         newRow.append(currentName)
