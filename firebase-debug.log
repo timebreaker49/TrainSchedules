@@ -1,0 +1,42 @@
+[debug] [2018-03-11T04:52:45.730Z] ----------------------------------------------------------------------
+[debug] [2018-03-11T04:52:45.733Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\wayne\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-11T04:52:45.733Z] CLI Version:   3.17.5
+[debug] [2018-03-11T04:52:45.733Z] Platform:      win32
+[debug] [2018-03-11T04:52:45.733Z] Node Version:  v8.9.3
+[debug] [2018-03-11T04:52:45.734Z] Time:          Sat Mar 10 2018 22:52:45 GMT-0600 (Central Standard Time)
+[debug] [2018-03-11T04:52:45.734Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-11T04:52:45.760Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-11T04:52:45.762Z] > authorizing via signed-in user
+[debug] [2018-03-11T04:52:45.767Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-11T04:52:45.768Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/qq0sGq7_oXaxsH16G6gp_b08RORn5V9uJPQhRtvxOh_WHbfY-l6wQWxzp5P3v-4M',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Mar 10 2018 22:52:45 GMT-0600 (Central Standard Time)
+[debug] [2018-03-11T04:52:48.311Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-11T04:52:48.354Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/trainschedule-2de8a  
+  
+ Sat Mar 10 2018 22:52:48 GMT-0600 (Central Standard Time)
+[debug] [2018-03-11T04:52:48.925Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-11T04:52:48.927Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/trainschedule-2de8a/tokens  
+  
+ Sat Mar 10 2018 22:52:48 GMT-0600 (Central Standard Time)
+[debug] [2018-03-11T04:52:49.341Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-11T04:52:49.344Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/trainschedule-2de8a  
+  
+ Sat Mar 10 2018 22:52:49 GMT-0600 (Central Standard Time)
+[debug] [2018-03-11T04:52:49.673Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\wayne\Documents\coding_boot_camp\hw\hw7\TrainSchedules'...
+[info] 
+[debug] [2018-03-11T04:52:49.686Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/863490426984/clients/_:getWebAppConfig  
+  
+ Sat Mar 10 2018 22:52:49 GMT-0600 (Central Standard Time)
+[debug] [2018-03-11T04:52:50.038Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...

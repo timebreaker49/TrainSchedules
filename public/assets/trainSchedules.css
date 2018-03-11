@@ -1,0 +1,28 @@
+body {
+	background-color: black;
+}
+
+.edm-jumbo {
+    background-color: green;
+    color: black;
+}
+
+.train-cards {
+	margin-bottom: 5px;
+}
+
+.card-header {
+	background-color: green;
+    color: black;	
+    border-color: black;
+}
+
+.card {
+	border-color: black;
+}
+
+.btn-primary {
+	background-color: green;
+	border-color: black;
+	color: black;
+}

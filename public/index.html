@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Train Schedules</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/trainSchedules.css">
+
+</head>
+
+<body>
+    <div class="container">  
+        <div class="jumbotron edm-jumbo">
+            <h1 class="text-center">電車の時刻表</h1>
+                <hr>
+                <h4 class="text-center">予定通り</h4>
+        </div>
+
+        <div class="row train-schedule">
+            <div class="col-12 train-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>電車</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="train-sched">
+                            <table class="table">
+                                <thead class="thead">
+                                    <tr>
+                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival</th>
+                                        <th scope="col">Minutes Away</th>
+                                    </tr>
+                                
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 add-train">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>新規登録</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="train-schedule">
+                            <div class="form-group">
+                                <label for="newTrainName">Train Name</label>
+                                <input type="text" class="form-control" id="train-name" placeholder="例: JR東日本横浜線102">
+                            </div>
+                            <div class="form-group">
+                                <label for="newDestation">Destination</label>
+                                <input type="text" class="form-control" id="train-destination" placeholder="例: みなとみらい駅">
+                            </div>
+                            <div class="form-group">
+                                <label for="newFirstDeparture">First Train Time (HH:mm - military time)</label>
+                                <input type="time" class="form-control" id="train-start" placeholder="05:34">
+                            </div>
+                            <div class="form-group">
+                                <label for="newFrequency">Frequency (min)</label>
+                                <input type="number" class="form-control" id="train-frequency" placeholder="5">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                                    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+<script src="assets/firebase-key.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+
+<script src="assets/ts.js"></script>
+
+</html>
