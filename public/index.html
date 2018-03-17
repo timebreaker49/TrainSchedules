@@ -16,27 +16,27 @@
 <body>
     <div class="container">  
         <div class="jumbotron edm-jumbo">
-            <h1 class="text-center">電車の時刻表</h1>
+            <h1 class="text-center">Train schedules</h1>
                 <hr>
-                <h4 class="text-center">予定通り</h4>
+                <h4 class="text-center">Always on time!</h4>
         </div>
 
         <div class="row train-schedule">
             <div class="col-12 train-cards">
                 <div class="card">
                     <div class="card-header">
-                        <h3>電車</h3>
+                        <h3>Trains</h3>
                     </div>
                     <div class="card-body">
                         <div class="train-sched">
                             <table class="table">
                                 <thead class="thead">
                                     <tr>
-                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Train name</th>
                                         <th scope="col">Destination</th>
-                                        <th scope="col">Frequency (min)</th>
-                                        <th scope="col">Next Arrival</th>
-                                        <th scope="col">Minutes Away</th>
+                                        <th scope="col">Frequency (m)</th>
+                                        <th scope="col">Next arrival</th>
+                                        <th scope="col">Remaining minutes</th>
                                     </tr>
                                 
                                 </thead>
@@ -54,25 +54,25 @@
             <div class="col-12 add-train">
                 <div class="card">
                     <div class="card-header">
-                        <h4>新規登録</h4>
+                        <h4>Record new train</h4>
                     </div>
                     <div class="card-body">
                         <form id="train-schedule">
                             <div class="form-group">
-                                <label for="newTrainName">Train Name</label>
-                                <input type="text" class="form-control" id="train-name" placeholder="例: JR東日本横浜線102">
+                                <label for="newTrainName">Train name</label>
+                                <input type="text" class="form-control" id="train-name" placeholder="Example: 102 East">
                             </div>
                             <div class="form-group">
                                 <label for="newDestation">Destination</label>
-                                <input type="text" class="form-control" id="train-destination" placeholder="例: みなとみらい駅">
+                                <input type="text" class="form-control" id="train-destination" placeholder="Example: Minato-mirai">
                             </div>
                             <div class="form-group">
-                                <label for="newFirstDeparture">First Train Time (HH:mm - military time)</label>
-                                <input type="time" class="form-control" id="train-start" placeholder="05:34">
+                                <label for="newFirstDeparture">First departure time (HH:mm - military time)</label>
+                                <input type="time" class="form-control" id="train-start" placeholder="Ex: 05:34">
                             </div>
                             <div class="form-group">
-                                <label for="newFrequency">Frequency (min)</label>
-                                <input type="number" class="form-control" id="train-frequency" placeholder="5">
+                                <label for="newFrequency">Frequency (m)</label>
+                                <input type="number" class="form-control" id="train-frequency" placeholder="Ex: 5">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                             

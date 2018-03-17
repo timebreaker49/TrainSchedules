@@ -9,18 +9,15 @@ $(function () {
    		var trainFreq = currentData.frequency;
 
 		var firstTrain = moment(currentData.start, "HH:mm").subtract(1, "years");
-		console.log("firstTrain: " + firstTrain);
 
 		var diffTime = moment().diff(moment(firstTrain), "minutes");
-		console.log("Difftime: " + diffTime);
 
 		var remainder = diffTime % trainFreq;
-		console.log(remainder);
 
 		var timeTillTrain = trainFreq - remainder;
 
 		var nextTrain = moment().add(timeTillTrain, "minutes");
-
+//
     	var newRow = $("<tr class='tableRow'>");
         //creates a newRow variable with a class tableRow
         var currentName = $("<td class='name'>").text(currentData.name);
